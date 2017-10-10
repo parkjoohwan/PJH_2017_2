@@ -67,24 +67,37 @@ Transitional//EN'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 
 		<!-- EX03-04 -->
 
-		<h1>DOCTYPE 연습</h1>
-		<p>XHTML1.0 Strict 범주를 사용한 페이지입니다.</p>
+		<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0
+		Transitional//EN'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+		<html xmlns='htp://www.w3.org/19/xhtml'>
+		<head>
+				<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+				<title></title>
+		</head>
+		<body>
+				<h1>DOCTYPE 연습</h1>
+				<p>XHTML1.0 Strict 범주를 사용한 페이지입니다.</p>
+		</body>
+		</html>
+
 
 		<!-- EX03-05 -->
 
 		<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0
-		Transitional//EN'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
-		<html xmlns='htp://www.w3.org/19/xhtml'>
-		<html>
-			<head>
-				<meta http-equiv='Content-Type' content='text/html; chaset=utf-8'/>
-				<meta charset="utf-8">
-				<title></title>
-			</head>
-			<body>
+		Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+		<html xmlns='http://www.w3.org/1999/xhtml'>
+		<head>
+				<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+				<title> </title>
+		</head>
+		<body>
 				<h1>웹 표준 페이지</h1>
 				<p><a href="http://www.google.com">[구글]</a>로 이동</p>
-			</body>
+				<p>
+		    <a href="http://validator.w3.org/check?uri=referer"><img
+		      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+		  </p>
+		</body>
 		</html>
 
 
