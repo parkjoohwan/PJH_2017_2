@@ -1,0 +1,14 @@
+1. 스탠포드 대학교(m.stanford.edu)
+* 주소 : http://m.stanford.edu
+* PC에서 확인 가능합니다.
+
+2. 슬라이드쉐어
+* 주소 : www.slideshare.net
+* 반드시 스마트폰으로 접속해야 모바일 웹을 확인할 수 있습니다.
+
+3. JQuery Mobile의 데모
+* 주소 : http://jquerymobile.com/demos/1.0.1/
+* [http://jquerymobile.com - Docs] 메뉴로 이동합니다.
+* 1.0.1 버전은 계속 업그레이드 되므로 다를 수 있습니다.
+* PC에서 확인 가능합니다.
+

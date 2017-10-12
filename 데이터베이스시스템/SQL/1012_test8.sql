@@ -1,0 +1,1 @@
+execute dbo.uspUpdateFaculty '111111', 'yyyy', 'yyyy', 'yyyy', 'asdf', 'fsd', '111111'

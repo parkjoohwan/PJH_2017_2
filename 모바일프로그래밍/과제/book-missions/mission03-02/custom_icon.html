@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+	<style>
+	    /* 제목까지 포함한 총 높이값*/
+	    .custom_icon .ui-btn .ui-btn-inner { padding-top: 70px; }
+		.custom_icon .ui-btn .ui-icon {
+			/* 여백까지 고려한 너비와 높이값 */ 
+		    width: 60px; height: 60px;
+			/* 아이콘 위치의 x좌표 */ 
+		    margin-left: -30px;
+			/* 영역을 좁히는 것을 모두 해제시킴 */ 
+			box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-border-radius: 0; border-radius: 0; 
+		}
+		/* 아이콘 파일의 경로를 배경이미지로 설정 */
+		#icon1 .ui-icon { background:  url(icon01.png) 50% 50% no-repeat; background-size: 48px 47px; }
+		#icon2 .ui-icon { background:  url(icon02.png) 50% 50% no-repeat; background-size: 48px 37px; }
+		#icon3 .ui-icon { background:  url(icon03.png) 50% 50% no-repeat; background-size: 48px 41px; }
+		#icon4 .ui-icon { background:  url(icon04.png) 50% 50% no-repeat; background-size: 48px 48px; }
+	</style>
+</head>
+
+<body>
+<div data-role="page" id="page" data-fullscreen="true">
+  <div data-role="header" data-position="fixed">
+    <h1>사용자 정의 아이콘</h1>
+  </div><!-- header 끝 -->
+  <div data-role="content">
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar"  class="custom_icon" >
+        <ul>
+            <li><a href="#" id="icon1" data-icon="custom">icon1</a></li>
+            <li><a href="#" id="icon2" data-icon="custom">icon2</a></li>
+            <li><a href="#" id="icon3" data-icon="custom">icon3</a></li>
+            <li><a href="#" id="icon4" data-icon="custom">icon4</a></li>
+        </ul>
+    </div>  <!-- navbar 끝 -->   
+  </div> <!-- footer 끝 -->
+</div>
+</body>
+</html>

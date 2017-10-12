@@ -1,0 +1,1 @@
+execute dbo.uspDeleteFaculty 'e123'

@@ -1,0 +1,10 @@
+@charset "utf-8";
+#pc_title {
+	color: #00F;
+}
+body {
+	background-color: #090;
+}
+#phone_title {
+	display: none;
+}

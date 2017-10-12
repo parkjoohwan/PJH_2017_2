@@ -1,0 +1,4 @@
+﻿  5_4.cpp
+5_4.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
+  5_4.vcxproj -> D:\강의-그래픽스\2016-그래픽스\교재코드\05장\Debug\05_04 (사각형2).exe
+  5_4.vcxproj -> D:\강의-그래픽스\2016-그래픽스\교재코드\05장\Debug\05_04 (사각형2).pdb (Full PDB)

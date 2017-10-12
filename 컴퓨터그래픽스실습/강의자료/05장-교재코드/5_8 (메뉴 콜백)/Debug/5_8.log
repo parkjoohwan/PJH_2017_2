@@ -1,0 +1,4 @@
+﻿  5_8.cpp
+5_8.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
+  5_8.vcxproj -> C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\강의자료\05장-교재코드\5_8 (메뉴 콜백)\Debug\5_8 (메뉴).exe
+  5_8.vcxproj -> C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\강의자료\05장-교재코드\5_8 (메뉴 콜백)\Debug\5_8 (메뉴).pdb (Full PDB)

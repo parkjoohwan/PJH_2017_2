@@ -1,0 +1,1 @@
+execute dbo.uspAddFaculty 'eeeee', 'jkjk', 'some', 'vasvsd', 'vasdvsad', 'adsvasdv', 'dsvas';
