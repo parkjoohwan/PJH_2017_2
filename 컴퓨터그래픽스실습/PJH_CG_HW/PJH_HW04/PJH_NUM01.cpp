@@ -161,6 +161,7 @@ void MyMainMenu(int sel) {
 	glutPostRedisplay();
 }
 // Reshape 
+
 void MyReshape(int w, int h) {
 	Width=w;
 	Height=h;
