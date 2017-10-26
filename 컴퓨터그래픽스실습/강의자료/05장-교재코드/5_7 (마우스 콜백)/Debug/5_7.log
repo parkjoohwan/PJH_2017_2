@@ -1,5 +1,4 @@
-﻿빌드 시작: 2015-10-06 오전 9:13:54
-
-빌드했습니다.
-
-경과 시간: 00:00:00.02
+﻿  5_7.cpp
+5_7.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
+  5_7.vcxproj -> C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\강의자료\05장-교재코드\5_7 (마우스 콜백)\Debug\5_7 (마우스콜백).exe
+  5_7.vcxproj -> C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\강의자료\05장-교재코드\5_7 (마우스 콜백)\Debug\5_7 (마우스콜백).pdb (Full PDB)
