@@ -11,14 +11,10 @@ void Arm(float x, float y, float angle){
 		glTranslatef(x,y,0);
 		glRotated(angle, 0,0,1);
 		glutWireSphere(0.1,20,10);
-		glPushMatrix();
-		{
-			glTranslatef(0,-0.33,0);
-			glScalef(1,3,1);
-			glutWireCube(0.15);
-		}
-		glPopMatrix();
-		}
+		glTranslatef(0,-0.33,0);
+		glScalef(1,3,1);
+		glutWireCube(0.15);
+	}
 	glPopMatrix();
 	glFlush();
 }
