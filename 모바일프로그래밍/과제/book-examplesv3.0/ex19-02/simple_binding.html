@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<title></title>
+   
+	<script type="text/javascript">
+        $(document).ready(function(e) {
+			// 현재 폴더의 test_data2.json파일에서 데이터 읽기
+            $.getJSON('./test_data2.json', function(data) {
+				// 동적으로 생성할 마크업 저장할 변수 초기화                
+				var strResult="";
+                $.each(data.items, function(key, value) {
+					// value에 들어있는 name, age, email의 값으로 동적으로 목록 마크업을 생성함										
+                   	strResult +=  
+                        "<li><h1>" + value.name + "</h1>" +
+                        "<h2>" + value.age + "</h2>" +
+                        "<p>" + value.email + "</p>" +
+                        "</li>";
+					// ul 엘리먼트의 내용에 생성된 마크업 추가함
+					$("#result").append(strResult);
+					// 저장된 마크업 새로 리셋
+					strResult = "";				   
+                });
+				// 새로고침을 하여 화면에 표시
+				$("#result").listview("refresh");
+            });
+        });
+    </script>
+</head>
+<body>
+
+	<ul id="result"></ul>
+
+</body>
+</html>

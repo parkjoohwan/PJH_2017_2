@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.head {
+	background-color: #473E37;  /* 타이틀 그림 대신 고동색으로 변경 */
+	padding: 1em;
+} 
+.pg-main {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.entries p.pcview_only{
+	display:none;  /* pcview_only로 설정된 글 화면에서 생략 */
+}
+.sidebar ul { /* 맨 왼쪽에 장식용 바 그림 */
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #ccc;
+}
+.sidebar ul li { /* 인라인 레벨로 바꾸고 오른쪽에 장식용 바 그림 */
+	display: inline;
+	border-right-width: 2px; 
+	border-right-style: solid;
+	border-right-color: #ccc;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.foot {
+	background-color: #333;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+	padding: 10px;
+	color: #FFF;
+	margin-top: 10px;
+	text-align: center;
+}

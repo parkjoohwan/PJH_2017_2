@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>버추얼대학교</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- JQM 설정 -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    
+    <!-- fotorama 설정 추가 -->
+    <link href="fotorama/fotorama.css" rel="stylesheet">
+    <script src="fotorama/fotorama.js"></script>
+	<style>
+	.fotorama__caption {
+    	text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+    <div data-role="page"  id="campus_images" >
+      <div data-role="header">   
+        <h1>캠퍼스 이미지</h1>
+      </div><!-- header 끝 -->
+      
+      <div data-role="content" >
+            <div class="fotorama" data-arrows="true" data-width="100%" data-ratio="965/643" data-allowfullscreen="true" data-nav="thumbs" >
+                    <img src="pic/cb01.jpg" data-caption="호수공원" />
+                    <img src="pic/cb02.jpg" data-caption="자유관" />
+                    <img src="pic/cb03.jpg" data-caption="성실관" />
+                    <img src="pic/cb04.jpg" data-caption="학생회관" />
+                    <img src="pic/cb05.jpg" data-caption="자유관 앞 조형물" />
+                    <img src="pic/cb06.jpg" data-caption="본관" />
+                    <img src="pic/cb07.jpg" data-caption="채플관" />
+                    <a href="http://youtu.be/gc-SkeQ3Bng">최고의 가치 비디오</a>
+            </div> 
+        </div>    
+        <div data-role="footer">
+            <h2>버추얼 대학교</h2>
+        </div>
+          
+    </div>
+    
+</body>
+</html>

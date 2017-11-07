@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 워드프레스에서 편집한 스타일 준비-->
+    <link rel="stylesheet" href="http://hmaps.dothome.co.kr/wp-content/themes/twentyfifteen/style.css?ver=4.3.1" />    
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+   <style>
+		.img_thumb {
+			/* 썸네일 이미지의 위치를 보정 */ 
+			margin: 0.4em;
+			/*썸네일 이미지의 모서리 약간 둥글게 라운드 변경*/
+			border-radius: 4px;
+		}	
+    </style>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+    <!-- 워드프레스 목록의 메인 페이지-->
+    <div data-role="page" id="list_page">
+    	<!-- 홈,검색 아이콘이 있는 헤더 용 제목 준비-->
+        <div data-role="header">
+        	<a class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" href="#">Home</a>        
+            <h1>워드프레스 콘텐츠</h1>
+        	<a class="ui-btn ui-corner-all ui-icon-search ui-btn-icon-notext" href="#">Search</a>            
+        </div>      
+        <div data-role="content" id="result_list">
+		        <!-- 썸네일 이미지와 목록 내용 출력 -->
+        </div>      
+        <div data-role="footer" data-theme="b">
+            <h4>HMAPS.net</h4>
+        </div>
+        <!-- /footer --> 
+    </div>
+	<!-- 워드프레스의 상세 페이지-->
+    <div data-role="page" id="detail_page">
+    	<!-- 돌아가기 버튼이 있는 헤더 용 제목 준비-->
+        <div data-role="header">
+        	<a class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext" href="#list_page">Back</a>
+            <h1 id="result_title"></h1>           
+        </div>      
+        <div data-role="content" id="result_detail">
+        	<!-- 상세 워드프레스 내용 출력 -->
+        </div>      
+        <div data-role="footer" data-theme="b">
+            <h4>HMAPS.net</h4>
+        </div>
+    </div>
+	<!-- 워드프레스에서 읽은 JSON 데이터 바인딩 하기 -->
+	<script>
+		// 메인 페이지에 JSON으로 읽힌 정보를 하나씩 꺼내서 동적으로 목록 생성
+        function get_list(data) {
+			// 동적으로 마크업할 변수에 검색 입력 폼과 ul목록을 연결하여 생성
+			// 검색 폼을 통해 목록의 데이터 필터 검색 연결
+			var strResult = "<form class='ui-filterable'>" 
+						+ "<input id='searchposts' data-type='search'>"
+						+ "</form>" 
+						+ "<ul data-role='listview' data-inset='true' data-filter='true' data-input='#searchposts'>";
+			// JSON으로 읽힌 정보를 하나씩 꺼내서 동적으로 목록 생성          
+            $.each(data.posts, function(key, value) {
+				// li 엘리먼트 안에 제목, 썸네일 이미지, 링크 생성
+				// 링크 이동 시 show_detail() 함수를 호출하여 콘텐츠 id값을 전달하도록 생성 
+               	strResult +=  
+                    "<li><a href='#detail_page' onclick= show_detail(" + value.id + ")>" +
+					"<img src='" + value.thumbnail + "' class='img_thumb'>" +
+                    "<h2>" + value.title + "</h2>"+
+                    "</a></li>";
+            });
+			// 완성된 목록을 출력 
+			$("#result_list").html(strResult + "</ul>");
+        };
+		// 워드프레스의 상세 페이지에 전달받은 id의 글을 다시 읽어 동적으로 생성
+		function show_detail(id) {
+			// 전달받은 id값으로 해당 워드프레스 콘텐츠 전문의 JSON 값을 읽어옴
+			$.getJSON('http://hmaps.dothome.co.kr/?json=get_post&post_id=' + id + '&callback=?', function(data) {
+				// 헤더에 제목 출력
+				$("#result_title").html(data.post.title);
+				// 전달받은 콘텐츠 데이터를 이용해서 전체 내용 태그 생성 및 출력
+				$("#result_detail").html(data.post.content);
+			});
+		}
+    </script>
+	<!-- 워드프레스 JSON API를 통해 지정한 번호와 개수의 글 읽은 후 get_list() 호출-->
+	<script src="http://hmaps.dothome.co.kr/?json=get_recent_posts&count=5&callback=get_list"></script>
+</body>
+</html>

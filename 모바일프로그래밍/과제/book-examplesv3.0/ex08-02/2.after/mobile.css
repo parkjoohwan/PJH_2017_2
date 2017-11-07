@@ -1,0 +1,8 @@
+@charset "utf-8";
+body {
+	color: #FFF; /* 글자 색상을 흰색 */
+	background-color: #000; /* 배경 색상을 검정 */
+}
+#pc_view {
+	display : none; /* pc_view 영역은 화면에서 생략 */
+}

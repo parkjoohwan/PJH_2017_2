@@ -1,0 +1,15 @@
+{
+  "items": [{
+    "name": "유재석",
+    "age": 35,
+    "email": "sjyou@somedomain.com"
+  }, {
+    "name": "박명수",
+    "age": 30,
+    "email": "mspark@somedomain.com"
+  }, {
+    "name": "정준하",
+    "age": 45,
+    "email": "jhjung@somedomain.com"
+  }]
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		// 현재 폴더에 있는 test_data1.json파일에서 데이터를 가져옴
+        $.getJSON('./test_data1.json', function(data) {
+			// p태그의 내용에 가져온 데이터를 차례로 넣고 <br/>태그로 줄바꿈을 해줌
+			$('#result').html( data.name + '<br/>' + data.age + '<br/>' + data.email);
+		});
+    });
+</script>
+</head>
+<body>
+	<p id="result"></p>
+</body>
+</html>

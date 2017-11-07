@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<style type="text/css">
+	.img_full {
+		/* 이미지가 화면 가득 보이도록 너비값 설정*/
+		width: 100%;
+	}
+	.img_thumb {
+		/* 목록의 이미지의 위치를 보정*/
+		margin: 0.8em;
+	}
+    </style>
+    
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>	
+	</head>
+
+	<body>
+    <!-- 포토 스트림 목록의 메인 페이지-->
+    <div data-role="page" id="list_page">
+    	<!-- 홈 아이콘이 있는 헤더 용 제목 준비-->
+        <div data-role="header" >
+        	<a class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" href="#">Home</a>
+            <h1>Flickr 포토스트림</h1>
+        </div>
+        <div data-role="content" id="result_list">	       
+        	<!-- 썸네일 이미지 목록 표시 -->
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h4>HMAPS.net</h4>
+        </div>
+    </div>
+	<!-- 포토의 상세 페이지-->
+    <div data-role="page" id="detail_page">
+    	<!-- 돌아가기 버튼이 있는 헤더 용 제목 준비-->
+        <div data-role="header" data-add-back-btn="true">
+            <h1 id="result_title"></h1>           
+        </div>        
+        <div data-role="content">
+        	<!-- 상세 이미지 출력 -->
+			<div id="result_detail"></div>
+        </div>        
+        <div data-role="footer" data-theme="b">
+            <h4>HMAPS.net</h4>
+        </div> 
+    </div>
+	<!-- 플리커에서 읽은 JSON 데이터 바인딩 하기 -->
+	<script>
+		// 메인 페이지에 JSON으로 읽힌 정보를 하나씩 꺼내서 동적으로 목록 생성
+        function jsonFlickrFeed(data) {
+			// 동적으로 마크업할 변수 및 초기값으로 ul 엘리먼트의 목록 생성            
+			var strResult = "<ul data-role='listview'>";
+			// JSON으로 읽힌 정보를 하나씩 꺼내서 동적으로 목록 생성             
+            $.each(data.items, function(key, value) {
+				// li 엘리먼트 안에 제목, 썸네일 이미지, 링크 생성
+				// 링크 이동 시 show_detail() 함수를 호출하여 이미지 경로값을 전달하도록 생성                
+               	strResult +=  
+                    "<li><a href='#detail_page' onclick='show_detail(\"" + value.media.m.replace("_m.jpg","_b.jpg") + "\",\"" + value.title + "\")'>" +
+					"<img src='" + value.media.m + "' class='img_thumb'>" +
+                    "<h2>" + value.title + "</h2>" +
+                    "</a></li>";
+            });
+			// 완성된 목록을 출력 
+			$("#result_list").html(strResult + "</ul>");
+        };
+		// 포토의 상세 페이지에 내용을 동적으로 생성
+		function show_detail(link_url, title) {
+			// 헤더에 제목 출력
+			$("#result_title").html(title);
+			// 전달받은 이미지 경로를 이용해서 전체 크기의 이미지 태그 생성 및 출력
+			$('#result_detail').html("<img src='" + link_url + "' class='img_full'>");
+		}
+    </script>
+	<!-- 플리커 API를 통해 포토 지정한 id와 태그의 JSON 데이터 읽기-->
+	<script src="http://api.flickr.com/services/feeds/photos_public.gne?id=137506863@N06&format=json&tags=MDLife"></script>
+</body>
+</html>

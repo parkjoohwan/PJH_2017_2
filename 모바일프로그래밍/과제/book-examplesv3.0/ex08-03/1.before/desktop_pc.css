@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.pg {
+	width: 800px; /* 가로 너비를 800px로 고정 */
+	margin-right: auto; /* 좌우 여백을 같게 하여 가운데 정렬 시킴 */
+	margin-left: auto;
+}
+.head {
+	background-image: url(title.png); /* 타이틀 이미지를 배경으로 바꿈 */
+	background-repeat: no-repeat;
+	width: 800px; /* 이미지 크기로 설정 */
+	height: 264px;
+}
+.head h1 {
+	display : none;	 /* 텍스트 제목은 이미지로 대치하므로 화면에서 생략함 */
+}
+.entries {
+	float: left; /* "entries"를 상자로 간주하여 왼쪽으로 float */
+	width: 680px; /* 너비는 sidebar도 고려하여 680px로 줄임 */
+}
+.sidebar {
+	float: left; /* entries 옆에 나란히 출력을 위해 float 시킴 */
+	text-align: right; /* 텍스트 표시는 우측 정렬시킴 */
+	width: 100px; /* 너비는 entries 고려하여 800px을 넘지 않도록 100px 로 설정 */
+	margin-left: 20px; /* entries와 간격을 만듬 */
+}
+.sidebar ul {
+	list-style-type: none; /* 뷸렛 장식 제거*/
+}
+
+.foot {
+	background-color: #333;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+	padding: 10px;
+	color: #FFF;
+	margin-top: 10px;
+	clear: left; /* 끌려 올라가지 않도록 clear 시킴*/
+	text-align: center; 
+}
