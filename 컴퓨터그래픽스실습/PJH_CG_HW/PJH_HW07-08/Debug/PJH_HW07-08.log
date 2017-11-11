@@ -1,0 +1,45 @@
+﻿빌드 시작: 2017-11-10 오후 6:29:55
+     1>2 노드의 "C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\PJH_HW07-08\PJH_HW07-08.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\PJH_HW07-08.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(72): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 'fopen' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(78): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(82): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(86): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(91): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(97): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(117): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(126): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(134): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\ase.h(139): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\init.h(98): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' 선언을 참조하십시오.
+     1>c:\users\joo\desktop\3학년2학기\컴퓨터그래픽스실습\pjh_cg_hw\pjh_hw07-08\init.h(99): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' 선언을 참조하십시오.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\Debug\PJH_HW07-08.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\PJH_HW07-08.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\Debug\PJH_HW07-08.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\Debug\PJH_HW07-08.lib" /MACHINE:X86 Debug\main.obj
+         LINK : C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\Debug\PJH_HW07-08.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+         PJH_HW07-08.vcxproj -> C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\Debug\PJH_HW07-08.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\Debug\PJH_HW07-08.exe;#1" /manifest "Debug\PJH_HW07-08.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         "Debug\PJH_HW07-08.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\PJH_HW07-08.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\JOO\Desktop\3학년2학기\컴퓨터그래픽스실습\PJH_CG_HW\PJH_HW07-08\PJH_HW07-08.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.65
