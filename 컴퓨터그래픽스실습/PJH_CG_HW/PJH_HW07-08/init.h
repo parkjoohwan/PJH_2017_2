@@ -31,7 +31,8 @@ float p_near;   // 원근투상의 near 값
 float p_scale;  // 원근투상의 확대, 축소를 위한 변수
 
 bool robotRun;            // 로봇의 달리는 애니메이션 유무
-bool robotpunch;				  // 로봇 펀치 유무
+bool robotpunch;		  // 로봇 펀치 유무
+bool robotview;			  // 로봇 턴 뷰 유무
 float robotWeight;        // 로봇의 무게
 char robotWeightStr[3];   // 로봇의 무게를 출력하기 위한 문자열 
 double robotSpeed;        // 로봇의 달리는 속도
@@ -43,7 +44,9 @@ float sinR2;
 float cosR;
 float d_cosR;
 float d_sinR;
-float dz;
+float dz;				// 로봇 펀치 
+float vy;				// 로봇 턴 뷰
+float tspd;				// 턴 뷰 스피드
 GLfloat mat_diffuse[6];
 GLfloat mat_ambient[6];
 // mesh 의 회전방향, 이동 위치 좌표를 초기화
@@ -86,6 +89,7 @@ void meshInit() {
 	robotSpeed = 20;
 	robotRun = false;
 	robotpunch = false;
+	robotview = false;
 	robotRange = 0;
 	dRadian = 0;
 	sinR = 0;
@@ -94,6 +98,8 @@ void meshInit() {
 	d_cosR = 0;
 	d_sinR = 0;
 	dz = 0;
+	vy = 0;
+	tspd = 0;
 
 	sprintf(robotWeightStr, "%.f", robotWeight - 5);
 	sprintf(robotWeightStr, "%.f", (float)robotSpeed - 15);
@@ -115,6 +121,7 @@ void meshInit() {
 	else
 		scale = 1;
 }
+
 // 그리는 색 설정
 void setColor(float r, float g, float b, float a){
 

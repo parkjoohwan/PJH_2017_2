@@ -1,13 +1,4 @@
-///////////////////////////////////////////////////////////////////
-/*                                                               */
-/* File cut 0.1.1-i386                                           */
-/* author = Boram Yang (a.k.a botta)                             */
-/* date = 13.11.2008                                             */
-/*                                                               */
-/* Korea University of Technology and Education                  */
-/* Internet Media Engnieering                                    */
-/*                                                               */
-///////////////////////////////////////////////////////////////////
+
 
 #include <stdio.h>
 #include <stdlib.h>

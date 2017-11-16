@@ -27,14 +27,15 @@ int main(int argc, char **argv)
 	meshLoad();
 	meshInit();
 
-	cout << "--- Control Key ---\nRun / Stop : E \nRun Faster : W\nRun Slower : S\nIncrease Weight : A\n";
-	cout << "Loose Weight : D\nZoom in : Z\nZoom out : X\nReload : R\nQuit : Q\n" ; 
+	cout << "--- Control Key ---\n\nRun / Stop : E \nRun Faster : W\nRun Slower : S\nIncrease Weight : A\n";
+	cout << "Loose Weight : D\nZoom in : Z\nZoom out : X\nReload : R\nQuit : Q\n";
+	cout << "\n--- My Function ---\n\nPunch / Stop : P\nTurn View : V\nTurn Speed up : [\nTurn Speed down : ]";
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
 	glutInitWindowSize(windowX, windowY);
 	glutInitWindowPosition(300, 100); 
-	glutCreateWindow("2004135058 Opengl #6");
+	glutCreateWindow("2013136046 Opengl #6");
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	InitLight();       // 조명값 설정
 	glEnable(GL_CULL_FACE);

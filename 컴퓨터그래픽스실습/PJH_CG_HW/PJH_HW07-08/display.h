@@ -19,9 +19,14 @@ void MyDisplay() {
 		d_sinR = (float)sin(dRadian);
 	}
 	if(robotpunch == true){
-		dz+=0.05;
-		if( dz > 1 )
+		dz+=0.2;
+		if( dz > 4 )
 			dz = 0;
+	}
+	if(robotview){
+		vy+=5+tspd;
+		if( vy == 360  )
+			vy = 0;
 	}
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -159,7 +164,6 @@ void MyDisplay() {
 			glLoadIdentity();
 			
 			glFrustum(-0.1 * WidthFactor, 0.1 * WidthFactor, -0.1 * HeightFactor, 0.1 * HeightFactor, p_near, 20);
-		//	gluPerspective(30, 2.0, 0.2, 20.0);
 
 			glMatrixMode (GL_MODELVIEW);
 
@@ -172,9 +176,6 @@ void MyDisplay() {
 
 					glTranslated (0, 0.8, 0);
 					glScalef (0.8f / p_scale, 0.8f / p_scale, 0.8f / p_scale);
-				//	glScalef (1.0f / p_scale, 1.0f / p_scale, 1.0f / p_scale);
-				//	glRotatef (rotateY4, 1, 0, 0);
-				//	glRotatef (rotateX4, 0, 1, 0); 
 
 					drawRobot();                  // ·Îº¿ Ãâ·Â
 				glPopMatrix();

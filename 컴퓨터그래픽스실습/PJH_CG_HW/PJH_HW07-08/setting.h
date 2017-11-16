@@ -9,6 +9,7 @@ float camUpX;
 float camUpY;
 float camUpZ;
 
+
 // 타이머 함수
 void MyTimer(int Value){
 	if(robotRun){                       // 달리는 모션이면 타이머 함수 적용
@@ -16,6 +17,10 @@ void MyTimer(int Value){
 		glutTimerFunc(40, MyTimer, 1);
 	}
 	if(robotpunch){						// 주먹을 날리는 모션이면 타이머 함수 적용
+		glutPostRedisplay();
+		glutTimerFunc(40, MyTimer, 1);
+	}
+	if(robotview){						// 주먹을 날리는 모션이면 타이머 함수 적용
 		glutPostRedisplay();
 		glutTimerFunc(40, MyTimer, 1);
 	}

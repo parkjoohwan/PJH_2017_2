@@ -39,17 +39,14 @@ void drawCoord(int lineWidth)
 		glScaled (0.9, 0.9, 0.9);
 		glBegin (GL_LINES);
 			setColor(1.0f, 0, 0, 0);
-		//	glColor3f  (1.0f, 0, 0);
 			glVertex3f (0.0f, 0, 0);
 			glVertex3f (1.0f, 0, 0);	// RED   ==> +x axis
 			
 			setColor(0, 1.0f, 0, 0);
-		//	glColor3f  (0, 1.0f, 0);
 			glVertex3f (0, 0.0f, 0);
 			glVertex3f (0, 1.0f, 0);	// GREEN ==> +y axis
 			
 			setColor(0, 0, 1.0f, 0);
-		//	glColor3f  (0, 0, 1.0f);
 			glVertex3f (0, 0, 0.0f);
 			glVertex3f (0, 0, 1.0f);	// BLUE  ==> +z axis
 		glEnd();

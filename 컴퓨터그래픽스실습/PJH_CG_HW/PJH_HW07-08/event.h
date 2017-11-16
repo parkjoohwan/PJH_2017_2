@@ -17,8 +17,8 @@ GLfloat HeightFactor;
 // mouse click event
 void mouse(int button, int state, int x, int y)
 {
-    sx = x;
-    sy = y;
+	sx = x;
+	sy = y;
 	if(state == GLUT_DOWN){                 // 뷰포트를 클릭 시
 		if( x < windowX/2 ){
 			if( y > (windowY/2))
@@ -55,12 +55,10 @@ void motion(int x, int y)
 	case 4:
 		p_scale += (x-sx)/200;      // 마우스 좌우이동 시 로봇의 사이즈 조정
 		p_near += (y-sy)/200;       // 마우스 상하이동 시 원근투상의 near 값 조정
-		//rotateX4 += (x-sx)/2;
-		//rotateY4 += (y-sy)/2;
 		break;
 	}
-    sx = x;
-    sy = y;
+	sx = x;
+	sy = y;
 	if(robotRun == false)
 		glutPostRedisplay(); // display();
 }
@@ -75,7 +73,7 @@ void MySubMenu(int entryID){
 	case 2:                               // 줌아웃
 		if(scaleRate < 2)
 			scaleRate += 0.25;
-			glutPostRedisplay();
+		glutPostRedisplay();
 		break;
 	case 3:
 		if(robotRun == false){
@@ -98,8 +96,8 @@ void MySubMenu(int entryID){
 	case 6:
 		if(robotRun == false)
 			meshInit();      // 기본 위치로 
-			glutPostRedisplay();
-			robotpunch = false;
+		glutPostRedisplay();
+		robotpunch = false;
 		break;
 	}
 }
@@ -141,7 +139,7 @@ void MySubMenu3(int entryID){              // Backface culling 선택
 	}
 }
 void MySubMenu4(int entryID){              // 폴리곤 모드
-		switch(entryID){
+	switch(entryID){
 	case 1:
 		glPolygonMode(GL_FRONT, GL_FILL);
 		glutPostRedisplay();
@@ -194,7 +192,7 @@ void MyMainMenu(int entryID){
 void MyReshape(int NewWidth, int NewHeight) {
 	WidthFactor = (GLfloat)NewWidth / (GLfloat)800;
 	HeightFactor = (GLfloat)NewHeight / (GLfloat)800;
-	
+
 	windowX = NewWidth;
 	windowY = NewHeight;
 }
@@ -242,6 +240,8 @@ void MyKeyboard(unsigned char KeyPressed, int X, int Y){
 	case 'p':
 		if(robotpunch == true){
 			robotpunch = false;
+			meshInit();      // 기본 초기화 
+			glutPostRedisplay();
 		}
 		else {
 			robotpunch = true;
@@ -252,7 +252,7 @@ void MyKeyboard(unsigned char KeyPressed, int X, int Y){
 	case 'P':
 		if(robotpunch == true){
 			robotpunch = false;
-			meshInit();      // 기본 위치로 
+			meshInit();      // 기본 초기화
 			glutPostRedisplay();
 		}
 		else {
@@ -260,6 +260,36 @@ void MyKeyboard(unsigned char KeyPressed, int X, int Y){
 			glutPostRedisplay();
 			glutTimerFunc(40, MyTimer, 1);  // 타이머 시작
 		} 
+		break;
+	case 'v':
+		if(robotview){
+			robotview = false;
+		}
+		else {
+			robotview = true;
+			robotpunch = false;
+			robotRun = false;
+			glutPostRedisplay();
+			glutTimerFunc(40, MyTimer, 1);  // 타이머 시작
+		} 
+		break;
+	case 'V':
+		if(robotview == true){
+			robotview = false;
+		}
+		else {
+			robotview = true;
+			glutPostRedisplay();
+			glutTimerFunc(40, MyTimer, 1);  // 타이머 시작
+		} 
+		break;
+	case '[':
+		if( tspd < 5 )
+			tspd++;
+		break;
+	case ']':
+		if(tspd > -4)
+			tspd--;
 		break;
 	case 'E':
 		if(robotRun == true){
