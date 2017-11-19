@@ -49,7 +49,8 @@ float vy;				// 로봇 턴 뷰
 float tspd;				// 턴 뷰 스피드
 GLfloat mat_diffuse[6];
 GLfloat mat_ambient[6];
-// mesh 의 회전방향, 이동 위치 좌표를 초기화
+
+// ase 파일 읽기
 void meshLoad(){      
 
 	Head = new Mesh();
@@ -121,7 +122,6 @@ void meshInit() {
 	else
 		scale = 1;
 }
-
 // 그리는 색 설정
 void setColor(float r, float g, float b, float a){
 

@@ -9,9 +9,6 @@ struct Face {            // face 구조체, vertex 3개의 인덱스 정보를 갖는다.
 };
 struct Normal {          // normal 구조체, 각 face 에서의 법선벡터 x, y, z 값을 갖는다.
 	float faceNormal[3];
-//	float vertexNormal1[3];
-//	float vertexNormal2[3];
-//	float vertexNormal3[3];
 };
 struct Color {           // color 구조체,  mesh의 wireframe_color 의 r, g, b 정보를 갖는다.
 	float r, g, b;
@@ -167,27 +164,4 @@ public:
 
 		fclose(fp);
 	}
-	/*
-	void move(int direction){
-		int i = 0;
-
-		switch(direction){
-		case 1:        // -z    move front
-			for(i; i<vertexNum; i++)
-				vertexList[i].z = vertexList[i].z - 0.1;
-			break;
-		case 2:        // +z    move back 
-			for(i; i<vertexNum; i++)
-				vertexList[i].z = vertexList[i].z + 0.1;
-			break;
-		case 3:        // -x    move left 
-			for(i; i<vertexNum; i++)
-				vertexList[i].x = vertexList[i].x - 0.1;
-			break;
-		case 4:        // +x    move right 
-			for(i; i<vertexNum; i++)
-				vertexList[i].x = vertexList[i].x + 0.1;
-			break;
-		}
-	}*/
 };
