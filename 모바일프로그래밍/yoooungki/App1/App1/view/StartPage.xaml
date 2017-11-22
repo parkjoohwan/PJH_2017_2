@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behavior="clr-namespace:Behaviors;assembly=Behaviors"
+             x:Class="App1.view.StartPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--버튼이벤트 클릭-->
+            <Button Text="Sample1" Command="{Binding Clicked}"/>
+            <!--이벤트를 받아서 처리-->
+            <Button Text="Sample1_Behavior">
+                <Button.Behaviors>
+                    <behavior:EventHandlerBehavior EventName="Clicked">
+                        <behavior:InvokeCommandAction Command="{Binding Clicked}"/>
+                    </behavior:EventHandlerBehavior>
+                </Button.Behaviors>
+            </Button>
+            <!--<ListView.Behaviors>
+                    <behaviors:EventHandlerBehavior EventName="ItemSelected">
+                        <behaviors:InvokeCommandAction Command="{Binding ItemSelectedCommand}" 
+                                           Converter="{StaticResource SelectedItemConverter}" />
+                        <behaviors:InvokeCommandAction Command="{Binding OutputAgeCommand}" 
+                                           Converter="{StaticResource SelectedItemConverter}" />
+                    </behaviors:EventHandlerBehavior>
+                </ListView.Behaviors>-->
+            
+            
+            
+            <Label Text="Start page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
