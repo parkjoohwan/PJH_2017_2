@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.view.Sample3"
+             Title="Sample3"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding People}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell Text="{Binding Name}"
+                                  TextColor="Blue"
+                                  Detail="{Binding Address}"
+                                  DetailColor="Violet">
+                        </TextCell>-->
+                        <ViewCell>
+                            <!--<StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding Address}"/>
+                                <Label Text="{Binding Phone}"/>
+                            </StackLayout>-->
+                            <StackLayout Orientation="Vertical" Margin="20">
+                                <Label Text="{Binding Name}"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="{Binding Address}"/>
+                                    <Label Grid.Column="1" Text="{Binding Phone}"/>
+                                </Grid>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Address}"/>
+                                    <Label Text="{Binding Phone}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
