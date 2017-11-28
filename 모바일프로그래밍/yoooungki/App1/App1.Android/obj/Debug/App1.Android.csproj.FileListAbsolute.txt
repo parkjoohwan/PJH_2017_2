@@ -56,6 +56,7 @@ C:\Users\JOO\Downloads\yoooungki\App1\App1.Android\obj\Debug\android\assets\Xama
 C:\Users\JOO\Downloads\yoooungki\App1\App1.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\JOO\Downloads\yoooungki\App1\App1.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\JOO\Downloads\yoooungki\App1\App1.Android\bin\Debug\Behaviors.dll
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\App1.Android.csprojResolveAssemblyReference.cache
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\App1.Android.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\App1.Android.pdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\com.companyname.App1.apk
@@ -82,7 +83,6 @@ C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\Behaviors.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\App1.pdb
-C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\App1.dll.mdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\FormsViewGroup.pdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\Xamarin.Forms.Core.pdb
@@ -93,7 +93,6 @@ C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\App1.Android.csprojResolveAssemblyReference.cache
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\App1.Android.csproj.CoreCompileInputs.cache
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\App1.Android.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\App1.Android.pdb
@@ -105,8 +104,15 @@ C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\layout\tabbar.xml
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\layout\toolbar.xml
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\values\styles.xml
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\drawable\image3.png
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\drawable\image4.png
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\drawable\image5.png
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\drawable\image0.png
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\drawable\image1.png
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\res\drawable\image2.png
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\R.cs.flag
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\uploadflags.txt
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\App1.dll.mdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\bin\Debug\App1.Android.dll.mdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\App1.Android.dll.mdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\App1.dll.mdb

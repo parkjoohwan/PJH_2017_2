@@ -32,13 +32,13 @@ C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.ObjectModel.dll
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\Behaviors.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Collections.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Reflection.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Threading.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
-C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll

@@ -17,7 +17,7 @@
                         <behavior:InvokeCommandAction Command="{Binding Clicked}"/>
                     </behavior:EventHandlerBehavior>
                 </Button.Behaviors>
-            </Button>
+            </Button>   
             <!--<ListView.Behaviors>
                     <behaviors:EventHandlerBehavior EventName="ItemSelected">
                         <behaviors:InvokeCommandAction Command="{Binding ItemSelectedCommand}" 

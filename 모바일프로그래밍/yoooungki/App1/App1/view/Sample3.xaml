@@ -1,25 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converter="clr-namespace:App1.Converter"
+             xmlns:behavior="clr-namespace:Behaviors;assembly=Behaviors"
+             xmlns:b="clr-namespace:App1.Behavior"
              x:Class="App1.view.Sample3"
              Title="Sample3"
+             x:Name="root"
              >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:NameConverter x:Key="nameconverter" />
+            <converter:AddressConverter x:Key="addressconverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <StackLayout>
             <ListView ItemsSource="{Binding People}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <!--<TextCell Text="{Binding Name}"
+                        <ImageCell
+                                  ImageSource ="{Binding Image}"
+                                  Text="{Binding Name,
+                                            Converter={x:StaticResource nameconverter}
+                                    }"
                                   TextColor="Blue"
-                                  Detail="{Binding Address}"
+                                  Detail="{Binding Address, Converter={x:StaticResource addressconverter}}"
                                   DetailColor="Violet">
-                        </TextCell>-->
-                        <ViewCell>
-                            <!--<StackLayout Orientation="Vertical">
+                        </ImageCell>
+                        <!--<ViewCell>
+                            --><!--<StackLayout Orientation="Vertical">
                                 <Label Text="{Binding Name}"/>
                                 <Label Text="{Binding Address}"/>
                                 <Label Text="{Binding Phone}"/>
-                            </StackLayout>-->
+                            </StackLayout>--><!--
                             <StackLayout Orientation="Vertical" Margin="20">
                                 <Label Text="{Binding Name}"/>
                                 <Grid>
@@ -35,9 +50,22 @@
                                     <Label Text="{Binding Phone}"/>
                                 </StackLayout>
                             </StackLayout>
-                        </ViewCell>
+                        </ViewCell>-->
                     </DataTemplate>
                 </ListView.ItemTemplate>
+
+                <ListView.Behaviors>
+                    <!--이게 정석-->
+                    
+                    <b:ItemSelectedBehavior/>
+                    
+                    <!--쓰기 쉽게 만든 것을 가져온것-->
+                    <!--<behavior:EventHandlerBehavior EventName="ItemSelected">
+                        <behavior:InvokeCommandAction Command="{Binding ItemSelectedCommand}" CommandParameter="{x:Reference root}" />-->
+                    <!--</behavior:EventHandlerBehavior>-->
+                    
+                </ListView.Behaviors>
+                
             </ListView>
         </StackLayout>
     </ContentPage.Content>
