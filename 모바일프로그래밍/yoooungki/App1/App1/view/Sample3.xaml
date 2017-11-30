@@ -8,6 +8,7 @@
              Title="Sample3"
              x:Name="root"
              >
+    <!--미리 만들어놓은 클래스를 namespace, resources를 이용하여 사용할 수 있게함-->
     <ContentPage.Resources>
         <ResourceDictionary>
             <converter:NameConverter x:Key="nameconverter" />
@@ -17,9 +18,12 @@
     
     <ContentPage.Content>
         <StackLayout>
+            <!--복수개의 아이템(Person model)을 리스트 뷰를 통해 나타낼 수 있음-->
             <ListView ItemsSource="{Binding People}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
+                        <!--이미지 셀-->
+                        <!--데이터를 바꾸고싶을때는 직접 바꾸지말고 컨버터를 이용하여 바꾸자-->
                         <ImageCell
                                   ImageSource ="{Binding Image}"
                                   Text="{Binding Name,
@@ -29,6 +33,7 @@
                                   Detail="{Binding Address, Converter={x:StaticResource addressconverter}}"
                                   DetailColor="Violet">
                         </ImageCell>
+                        <!--뷰 셀을 이용해서 셀의 레이아웃을 정의하여 사용 할 수도 있음-->
                         <!--<ViewCell>
                             --><!--<StackLayout Orientation="Vertical">
                                 <Label Text="{Binding Name}"/>
@@ -54,12 +59,12 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
 
+                <!--behavior 클래스를 만들어서 사용하는것이 정석-->
                 <ListView.Behaviors>
-                    <!--이게 정석-->
-                    
                     <b:ItemSelectedBehavior/>
                     
-                    <!--쓰기 쉽게 만든 것을 가져온것-->
+                    <!--쓰기 쉽게 만든 것을 nuget manager를 통해 가져온것-->
+                    <!--뷰 모델에서 behavior를 전부 작성하기 위해서 사용하기도 함-->
                     <!--<behavior:EventHandlerBehavior EventName="ItemSelected">
                         <behavior:InvokeCommandAction Command="{Binding ItemSelectedCommand}" CommandParameter="{x:Reference root}" />-->
                     <!--</behavior:EventHandlerBehavior>-->

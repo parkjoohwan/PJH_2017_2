@@ -14,6 +14,7 @@ namespace App1.viewmodel
 
     {
         public ICommand ItemSelectedCommand { get; set; }
+        // 배열이나 리스트처럼 여러개의 컬렉션을 가짐
         public ObservableCollection<Person> People { get; set; }
 
         public Sample3ViewModel()
@@ -33,8 +34,9 @@ namespace App1.viewmodel
 
         private void ItemSelected(object obj)
         {
+            // 아이템이 선택되었다는 알림창을 띄워줌
             var page = obj as ContentPage;
-            page.DisplayAlert("ItemSelected Event", "이벤트가 선택되었습니다.", "ok");
+            page.DisplayAlert("ItemSelected Event", "Event Selected.", "ok");
         }
     }
 }

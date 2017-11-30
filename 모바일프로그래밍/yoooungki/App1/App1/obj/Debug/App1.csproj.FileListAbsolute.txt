@@ -36,3 +36,4 @@ C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1\obj\Debug\App1.dll
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1\obj\Debug\App1.pdb
 C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1\obj\Debug\App1.csprojResolveAssemblyReference.cache
+C:\Users\JOO\Desktop\3학년2학기\모바일프로그래밍\yoooungki\App1\App1\obj\Debug\App1.view.Sample4.xaml.g.cs

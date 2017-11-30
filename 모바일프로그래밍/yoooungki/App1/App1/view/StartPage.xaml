@@ -7,17 +7,20 @@
     <ContentPage.Content>
         <StackLayout>
             <!--버튼이벤트 클릭-->
+            <!--뷰 모델에 있는 Clicked 커멘드를 받아서 실행되며, 파라메터로 넘겨준 페이지로 이동하게 함-->
             <Button Text="Sample1" Command="{Binding Clicked}" CommandParameter="sample1"/>
             <Button Text="Sample2" Command="{Binding Clicked}" CommandParameter="sample2"/>
             <Button Text="Sample3" Command="{Binding Clicked}" CommandParameter="sample3"/>
+            <Button Text="Sample4" Command="{Binding Clicked}" CommandParameter="sample4"/>
+            
             <!--이벤트를 받아서 처리-->
-            <Button Text="Sample1_Behavior">
+            <!--<Button Text="Sample1_Behavior">
                 <Button.Behaviors>
                     <behavior:EventHandlerBehavior EventName="Clicked">
                         <behavior:InvokeCommandAction Command="{Binding Clicked}"/>
                     </behavior:EventHandlerBehavior>
                 </Button.Behaviors>
-            </Button>   
+            </Button>-->   
             <!--<ListView.Behaviors>
                     <behaviors:EventHandlerBehavior EventName="ItemSelected">
                         <behaviors:InvokeCommandAction Command="{Binding ItemSelectedCommand}" 

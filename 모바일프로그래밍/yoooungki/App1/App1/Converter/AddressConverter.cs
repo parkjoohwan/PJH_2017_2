@@ -12,7 +12,7 @@ namespace App1.Converter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return "상세주소 : " + value;
+            return "detail address : " + value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

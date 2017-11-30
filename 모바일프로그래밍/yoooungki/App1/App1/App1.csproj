@@ -44,6 +44,7 @@
     <Compile Include="model\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="viewmodel\Sample3ViewModel.cs" />
+    <Compile Include="viewmodel\Sample4ViewModel.cs" />
     <Compile Include="viewmodel\Startpageviewmodel.cs" />
     <Compile Include="view\Sample1.xaml.cs">
       <DependentUpon>Sample1.xaml</DependentUpon>
@@ -53,6 +54,9 @@
     </Compile>
     <Compile Include="view\Sample3.xaml.cs">
       <DependentUpon>Sample3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\Sample4.xaml.cs">
+      <DependentUpon>Sample4.xaml</DependentUpon>
     </Compile>
     <Compile Include="view\StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
@@ -81,7 +85,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="view\Sample4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="view\StartPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

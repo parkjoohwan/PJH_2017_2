@@ -24,7 +24,9 @@ namespace App1.viewmodel
             Clicked = new Command(Sample_clicked);
             Navigation = startPage.Navigation;
         }
-       
+
+        // 문자열이 넘어왔을 때 해당 문자열에 해당하는 페이지로
+        // 네비게이션해주는 역할을 하는 함수
         private void Sample_clicked(object obj)
         {
             switch (obj)
@@ -37,6 +39,9 @@ namespace App1.viewmodel
                     break;
                 case "sample3":
                     Navigation.PushAsync(new Sample3());
+                    break;
+                case "sample4":
+                    Navigation.PushAsync(new Sample4());
                     break;
                 default:
                     break;

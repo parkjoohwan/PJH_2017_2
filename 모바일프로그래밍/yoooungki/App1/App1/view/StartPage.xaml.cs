@@ -16,6 +16,7 @@ namespace App1.view
         public StartPage()
         {
             InitializeComponent();
+            // startpageviewmodel을 연결해 줌
             this.BindingContext = new Startpageviewmodel(this);
         }
         
