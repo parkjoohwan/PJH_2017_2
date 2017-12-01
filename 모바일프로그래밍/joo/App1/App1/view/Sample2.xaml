@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.view.Sample2"
+             Title="Sample2">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--레이블에 슬라이더가 어디쯤에 위치해있는지 나타냄, 슬라이더를 참조하여 바인딩 컨텍스트 해줌-->
+            <Slider x:Name="slider" Minimum="0" Maximum="100" Value="50"/>
+            <Label Text="{Binding Value}"
+                   BindingContext="{x:Reference slider}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
